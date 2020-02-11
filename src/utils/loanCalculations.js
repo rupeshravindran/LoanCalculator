@@ -41,7 +41,7 @@ export function getRepaymentSchedules(principal, duration, interest, loanType = 
 function getRepaymentDate(delta) {
     const currentDate = new Date(); 
     const [year, month] = [currentDate.getFullYear(), currentDate.getMonth()];
-    const day = ((month + delta) % 11) === 1 ? 28 : 30;
+    const day = ((month + delta) % 12) === 1 ? 28 : 30;
     const paymentDate = new Date(year, month + delta, day);
     return `${paymentDate.getDate()}/${paymentDate.getMonth() + 1}/${paymentDate.getFullYear()}`;
  }
