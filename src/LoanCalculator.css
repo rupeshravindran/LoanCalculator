@@ -1,5 +1,5 @@
 .loan-container {
-  font-size: 2em;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .loan-grid-container {
-  font-size: 1.5em;
+  font-size: 14px;
   display: flex;
   flex-direction: row;
 }

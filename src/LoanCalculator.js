@@ -39,11 +39,14 @@ export function LoanCalculator() {
       <NumberInput label='Duration' value={duration} description='(in months)' onChange={onDurationChange} />
 
       <div className="loan-grid-container">
-        <LoanGrid data={revolvingCreditRepayments}
+        <LoanGrid 
+        id={'RCF'}
+        data={revolvingCreditRepayments}
           value={revolvingCreditInterest} title='Revolving Credit Facility'
           onChange={onRevolvingCreditInterestChange} />
 
         <LoanGrid data={businessLoanRepayments}
+          id={'BL'}
           value={businessLoanInterest} title='Business Loan' 
           onChange={onBusinessLoanInterestChange}/>
       </div>
