@@ -6,7 +6,7 @@ import './LoanGrid.css';
 
 export function LoanGrid({id, title, data, value, onChange}) {
   return(
-    <div class="loan-grid">
+    <div className="loan-grid">
         <NumberInput label='Interest rate' value={value} description='(in %)' onChange={onChange}/>
         <Grid id={id} data={data} columns={columns}/>
         <div className="loan-grid-title">{title}</div>   
